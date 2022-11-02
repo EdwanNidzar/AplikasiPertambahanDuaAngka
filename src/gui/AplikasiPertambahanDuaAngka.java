@@ -5,6 +5,9 @@
  */
 package gui;
 
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author nidza
@@ -217,6 +220,14 @@ public class AplikasiPertambahanDuaAngka extends javax.swing.JFrame {
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
+        if (tNilai1.getText().equals("") || tNilai2.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Nilai Tidak boleh Kosong");
+        } else {
+            int n1 = Integer.parseInt(tNilai1.getText());
+            int n2 = Integer.parseInt(tNilai2.getText());
+            int hasil = n1 + n2;
+            tHasil.setText(Integer.toString(hasil));
+        }
     }//GEN-LAST:event_btnTambahActionPerformed
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
