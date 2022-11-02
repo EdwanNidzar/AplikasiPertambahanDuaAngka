@@ -232,6 +232,10 @@ public class AplikasiPertambahanDuaAngka extends javax.swing.JFrame {
 
     private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
         // TODO add your handling code here:
+        tNilai1.setText("");
+        tNilai2.setText("");
+        tHasil.setText("");
+        tNilai1.requestFocus();
     }//GEN-LAST:event_btnHapusActionPerformed
 
     private void btnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKeluarActionPerformed
