@@ -240,6 +240,10 @@ public class AplikasiPertambahanDuaAngka extends javax.swing.JFrame {
 
     private void btnKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKeluarActionPerformed
         // TODO add your handling code here:
+        int c = JOptionPane.showConfirmDialog(null, "Yakin Ingin Keluar", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+        if (c == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
     }//GEN-LAST:event_btnKeluarActionPerformed
 
     /**
